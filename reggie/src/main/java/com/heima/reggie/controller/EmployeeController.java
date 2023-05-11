@@ -1,16 +1,15 @@
 package com.heima.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.heima.reggie.common.R;
 import com.heima.reggie.entity.Employee;
 import com.heima.reggie.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
@@ -77,5 +76,21 @@ public class EmployeeController {
 
         employeeService.save(employee);
         return R.success("new employee created successfully");
+    }
+
+    @GetMapping("/page")
+    public R<Page> page(int page, int pageSize, String name) {
+        log.info("page is {}, page size is {}, name is {}", page, pageSize, name);
+
+        // create new page obj
+        Page pageInfo = new Page(page, pageSize);
+
+        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.like(StringUtils.isNotEmpty(name), Employee::getName, name);
+        queryWrapper.orderByDesc(Employee::getUpdateTime);
+
+        employeeService.page(pageInfo, queryWrapper);
+
+        return R.success(pageInfo);
     }
 }
