@@ -93,4 +93,27 @@ public class EmployeeController {
 
         return R.success(pageInfo);
     }
+
+    @PutMapping
+    public R<String> update(HttpServletRequest request, @RequestBody Employee employee) {
+        log.info("Update below employee: {}", employee.toString());
+
+        Long opEmployeeId = (Long) request.getSession().getAttribute("employee");
+
+        employee.setUpdateTime(LocalDateTime.now());
+        employee.setUpdateUser(opEmployeeId);
+
+        employeeService.updateById(employee);
+        return R.success("Employee update successfully");
+    }
+
+    @GetMapping("/{id}")
+    public R<Employee> getById(@PathVariable Long id) {
+        log.info("searching an employee by its id...");
+        Employee employee = employeeService.getById(id);
+        if (employee != null) {
+            return R.success(employee);
+        }
+        return R.error("Searching for an employee by id failed");
+    }
 }
