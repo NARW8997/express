@@ -1,6 +1,7 @@
 package com.heima.reggie.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.heima.reggie.common.BaseContext;
 import com.heima.reggie.common.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.AntPathMatcher;
@@ -44,8 +45,12 @@ public class LoginCheckFilter implements Filter {
             return;
         }
 
+        Long employeeId = (Long) request.getSession().getAttribute("employee");
+        // set employee id into current thread
+        BaseContext.setCurrentId(employeeId);
+
         // check login status
-        if (request.getSession().getAttribute("employee") != null) {
+        if (employeeId != null) {
             log.info("already login");
             filterChain.doFilter(request, response);
             return;
