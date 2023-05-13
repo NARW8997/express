@@ -14,14 +14,10 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @Slf4j
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
-    public R<String> exceptionHandler(SQLIntegrityConstraintViolationException ex) {
+    @ExceptionHandler(CustomException.class)
+    public R<String> exceptionHandler(CustomException ex) {
         String msg = ex.getMessage();
         log.info(msg);
-        if (msg.contains("Duplicate entry")) {
-            msg = msg.split(" ")[2] + " already exist";
-            return R.error(msg);
-        }
-        return R.error("Unknown Error");
+        return R.error(msg);
     }
 }
