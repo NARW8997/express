@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57d59de-d058-4f41-9944-92b7fcbcfca2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/backend/page/demo/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/entity/DishFlavor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/ReggieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +56,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "F:/Heima/8、黑马程序员瑞吉外卖平台实战开发/express/reggie/src/main/resources/backend/demo",
+    "last_opened_file_path": "F:/Heima/8、黑马程序员瑞吉外卖平台实战开发/express/reggie/src/main/java/com/heima/reggie/dto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "3acf5c7b740d6e2538f3a7b88cf069b3",
     "vue.rearranger.settings.migration": "true"
@@ -66,8 +76,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\resources\backend\demo" />
+      <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\java\com\heima\reggie\dto" />
       <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\java\com\heima\reggie\entity" />
+      <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\resources\backend\demo" />
       <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\java\com\heima\reggie\common" />
       <recent name="F:\Heima\8、黑马程序员瑞吉外卖平台实战开发\express\reggie\src\main\resources" />
     </key>
@@ -114,25 +125,11 @@
       <option name="presentableId" value="Default" />
       <updated>1683686691044</updated>
       <workItem from="1683686692089" duration="24887000" />
-      <workItem from="1683916415508" duration="22689000" />
+      <workItem from="1683916415508" duration="34214000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/CategoryServiceImpl.java</url>
-          <line>23</line>
-          <properties class="com.heima.reggie.service.impl.CategoryServiceImpl" method="remove">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
