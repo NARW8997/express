@@ -63,4 +63,5 @@ public class CategoryController {
         List<Category> categoryList = categoryService.list(queryWrapper);
         return R.success(categoryList);
     }
+
 }

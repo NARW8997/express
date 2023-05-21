@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57d59de-d058-4f41-9944-92b7fcbcfca2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/DishController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/dto/DishDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/entity/DishFlavor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishFlavorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/ReggieApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/dto/SetmealDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/entity/SetmealDish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/SetmealDishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4db2b000-627b-4f56-afaf-411409b41dd9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6a1abcdd-5f2e-4441-bcbe-c10dbc23773a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../81ab01ed-99c3-4d11-9999-40c7d146a6fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../94e0a981-ecfb-45e4-b892-f078daee0881.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aac6fca0-829a-4e90-9f02-0d670cdf31e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e8dd89f4-baa9-4403-aa41-ead7e6fbb250.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/DishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/SetmealService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heima/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +131,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683686691044</updated>
       <workItem from="1683686692089" duration="24887000" />
-      <workItem from="1683916415508" duration="34214000" />
+      <workItem from="1683916415508" duration="35478000" />
+      <workItem from="1684273098362" duration="12281000" />
     </task>
     <servers />
   </component>
